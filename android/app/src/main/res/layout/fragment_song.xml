@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Song name"
+        android:id="@+id/item_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/button_sync"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Path:"
+        android:id="@+id/label_path"
+        android:layout_alignLeft="@+id/item_name"
+        android:layout_alignStart="@+id/item_name"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/item_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music/Artist/Album/Song"
+        android:id="@+id/item_path"
+        android:layout_toRightOf="@+id/label_path"
+        android:layout_toEndOf="@+id/label_path"
+        android:layout_alignTop="@+id/label_path"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="start"
+        android:layout_toLeftOf="@+id/button_sync"
+        android:maxLines="2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_sync"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_check_box_outline_blank_black_24dp"
+        android:background="@android:color/transparent" />
+</RelativeLayout>
